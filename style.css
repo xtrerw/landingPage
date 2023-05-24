@@ -1,9 +1,9 @@
-@import url('https://fonts.googleapis.com/css2?family=Lora:wght@600&family=Rubik+Microbe&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,600;1,600&family=Open+Sans:ital,wght@0,600;1,600&display=swap');
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Rubik Microbe', cursive;
+    font-family: 'Open Sans', sans-serif;
 }
 body{
     background: skyblue;
@@ -94,6 +94,12 @@ header .navbar li a:hover{
     font-weight: 300;
     margin-bottom: 20px;
 }
+.contenido .tituloBox a:hover{
+    color: #fff;
+    background: rgb(137, 66, 188);
+    transition: 0.5s;
+}
+
 .contenido .tituloBox a{
     text-decoration: none;
     text-transform: uppercase;
@@ -149,4 +155,24 @@ header .navbar li a:hover{
 }
 .redSociales li{
     padding: 10px;
+}
+.redSociales li a{
+    color: #fff;
+    font-size: 2.5em;
+    transition: 0.3s;
+}
+.redSociales li:hover a{
+    color: rgb(45, 3, 74);
+}
+/* ********************************** */
+/* circulo */
+.circulo{
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: rgba(2,211,108,0.386);
+    clip-path: circle(650px at right 800px);
+    width: 100%;
+    height: 100%;
+    z-index: -1000;
 }
