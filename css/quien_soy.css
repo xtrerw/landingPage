@@ -75,9 +75,20 @@ header .navbar li a:hover{
     padding-left: 30px;
 }
 .contenido .tituloBox{
-    position: relative;
+    /* position: relative; */
+    
+    border-radius: 1rem;
+    background: rgba(16, 172, 233, 0.518);
     max-width: 600px;
     text-align: center;
+    /* animación de carta */
+    transition: 2s;
+    visibility: hidden;
+    opacity: 0;
+}
+.contenido:hover .tituloBox{
+    visibility: visible;
+    opacity: 1;
 }
 .contenido .tituloBox h2{
     font-size: 4.5rem;
