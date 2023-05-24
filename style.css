@@ -8,11 +8,11 @@
 body{
     background: skyblue;
     /* añadir foto de dondo sustituyendo el color */
-    background-image: url();
-    background-position: center;
+    /* background-image: url(img/background.jpg); */
+    /* background-position: center;
     background-repeat: no-repeat;
     background-attachment: fixed;
-    background-size: 100% 100%;
+    background-size: 100% 100%; */
 }
 section{
     position: relative;
@@ -118,7 +118,7 @@ header .navbar li a:hover{
     transition: 0.5s;
 }
 .contenido .imgBox{
-    width: 60px;
+    width: 600px;
     display: flex;
     justify-content: flex-end;
     padding-right: 50px;
