@@ -130,3 +130,23 @@ header .navbar li a:hover{
     justify-content: center;
     align-items: center;
 }
+.copyright p{
+    color: #fff;
+    text-align: center;
+    margin-left: 100px;
+}
+/*Redes Sociales*/
+
+.redSociales{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 100px 30px;
+    list-style: none;
+}
+.redSociales li{
+    padding: 10px;
+}
