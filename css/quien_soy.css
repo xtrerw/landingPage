@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@1,600&family=Open+Sans:ital,wght@1,600&family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Flow+Circular&family=Lora:ital,wght@1,600&family=Open+Sans:ital,wght@1,600&family=Roboto&display=swap');
 *{
     margin: 0;
     padding: 0;
@@ -76,40 +76,48 @@ header .navbar li a:hover{
 }
 .contenido .tituloBox{
     /* position: relative; */
-    
-    border-radius: 1rem;
-    background: rgba(16, 172, 233, 0.518);
-    max-width: 600px;
+    max-width: 650px;
     text-align: center;
     /* animación de carta */
     transition: 2s;
     visibility: hidden;
     opacity: 0;
 }
-.contenido:hover .tituloBox{
+/* animacion de texto */
+body:hover .tituloBox{
+    box-shadow:0 0 30px rgb(240, 10, 10);
+    border-radius: 1.5rem;
+    background-image: linear-gradient(127deg,#c33763,#4568dcb5,#1d2571);
+    padding: 2rem;
+    max-width: 1000px;
     visibility: visible;
     opacity: 1;
 }
 .contenido .tituloBox h2{
-    font-size: 4.5rem;
+    font-size: 1.5rem;
+    font-family: 'Flow Circular', cursive;
     text-transform: uppercase;
     color: white;
+    transition: all 2s;
 }
-.contenido .tituloBox h2 span{
-    background: rgb(137, 66, 188);
-    padding: 0 10px;
-    color: white;
-    font-family: 'Lora', serif;
-    font-weight: 600;
-    border-radius: 20px;
+body:hover .tituloBox h2{
+    font-size: 4.5rem;
+    font-family: 'Open Sans', sans-serif;
 }
 .contenido .tituloBox p{
-    font-size: 1.8rem;
+    font-size: 1.5rem;
     line-height: 1.5;
     color: white;
-    font-family: 'Roboto', sans-serif;;
+    font-family: 'Flow Circular', cursive;
     font-weight: 300;
     margin-bottom: 20px;
+    /*  */
+    transition: 2s;
+}
+/* animacion de texto */
+body:hover .tituloBox p{
+    font-size: 1.8rem;
+    font-family: 'Roboto', sans-serif;
 }
 .contenido .tituloBox a:hover{
     color: #fff;
