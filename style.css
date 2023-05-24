@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora:wght@600&family=Rubik+Microbe&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Rubik Microbe', cursive;
+}
+body{
+    background: skyblue;
+}
+section{
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 100px;
+}
+header{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 40px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+header .logo{
+    color: #fff;
+    font-size: 1.5rem;
+    text-decoration: none;
+    text-transform: uppercase;
+    background: rgb(137, 66, 188);
+    border-radius: 5px;
+    padding: 0 10px;
+    font-family: 'Lora', serif;
+    font-weight: 600;
+}
+header .navbar{
+    position: relative;
+    display: flex;
+}
+header .navbar li{
+    list-style: none;
+    margin-left: 30px;
+}
+header .navbar li a {
+    text-decoration: none;
+    color: white;
+    font-weight: 600;
+    padding: 10px;
+    transition: 0.3s;
+    font-size: 0.9em;
+    text-transform: uppercase;
+}
+header .navbar li a:hover{
+    border-bottom: 5px solid rgb(137,66,188);
+    padding: 2px;
+}
+/* contenido de la web */
+.contenido{
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 30px;
+}
+.contenido .tituloBox{
+    position: relative;
+    max-width: 600px;
+    text-align: center;
+}
+.contenido .tituloBox h2{
+    font-size: 4.5rem;
+    text-transform: uppercase;
+    color: white;
+}
+.contenido .tituloBox h2 span{
+    background: rgb(137, 66, 188);
+    padding: 0 10px;
+    color: white;
+    font-family: 'Lora', serif;
+    font-weight: 600;
+    border-radius: 20px;
+}
+.contenido .tituloBox p{
+    font-size: 1.8rem;
+    line-height: 1.5;
+    color: white;
+    font-family: 'Lora', serif;
+    font-weight: 300;
+    margin-bottom: 20px;
+}
+.contenido .tituloBox a{
+    text-decoration: none;
+    text-transform: uppercase;
+    color: rgb(137, 66, 188);
+    background: #fff;
+    padding: 10px 20px;
+    margin: left 30px;
+    border-radius: 20px;
+    letter-spacing: 2px;
+    transition: 0.5s;
+}
+.contenido .imgBox{
+    width: 60px;
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 50px;
+    margin-top: -50px;
+    z-index: -5;
+}
+.contenido .imgBox img{
+    height: 80vh;
+}
+.contenido .imgBox img:hover{
+    height: 80vh;
+}
+/* Copyright */
+.copyright{
+    position: absolute;
+    bottom: 0;
+    left: 800px;
+    margin-bottom: 20px;
+    padding: 0 100px 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
