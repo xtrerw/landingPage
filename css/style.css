@@ -182,3 +182,9 @@ header .navbar li a:hover{
     height: 100%;
     z-index: -1000;
 }
+/* reponsive */
+@media (max-width:2100) {
+    .contenido .imgBox img{
+        height: 40vh;
+    }
+}
