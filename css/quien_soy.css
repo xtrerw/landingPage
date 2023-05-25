@@ -75,7 +75,6 @@ header .navbar li a:hover{
     padding-left: 30px;
 }
 .contenido .tituloBox{
-    /* position: relative; */
     max-width: 650px;
     text-align: center;
     /* animación de carta */
@@ -137,18 +136,15 @@ body:hover .tituloBox p{
     transition: 0.5s;
 }
 .contenido .imgBox{
-    width: 600px;
-    display: flex;
-    justify-content: flex-end;
-    padding-right: 50px;
-    margin-top: -50px;
+    width: 350px;
+    height: 350px;
+
+    background-image: url(../img/figura_Perfil.jpg);
+    background-size: cover;
+    border: 20px solid #e9161694;
+    outline:25px solid #ffffffde;
+    border-radius: 50%;
     z-index: -5;
-}
-.contenido .imgBox img{
-    height: 80vh;
-}
-.contenido .imgBox img:hover{
-    height: 80vh;
 }
 /* Copyright */
 .copyright{
@@ -195,9 +191,212 @@ body:hover .tituloBox p{
     position: absolute;
     top: 0;
     left: 0;
-    background: rgba(2,211,108,0.386);
+    background-image: url(../img/quien_soy.png);
+    background-size: cover;
+    background-position: center;
     clip-path: circle(650px at right 800px);
     width: 100%;
     height: 100%;
     z-index: -1000;
+}
+/* reponsive */
+/* @media (min-width:1880px) and (max-width:2000px) and (max-height:1080px){
+    .contenido .imgBox{
+        padding-right: 0%;
+    }
+} */
+@media (min-width:1500px) and (max-width:1880px) and (max-height:1080px){
+    .contenido .imgBox{
+        width: 300px;
+        height: 300px;
+    }
+    .contenido .tituloBox{
+        max-width: 600px;
+    }
+    body:hover .tituloBox{
+        max-width: 800px;
+    }
+    body:hover .tituloBox h2{
+        font-size: 3rem;
+    }
+    body:hover .tituloBox p{
+        font-size: 1.5rem;
+    }
+}
+@media (min-width:1330px) and (max-width:1500px) {
+    /*  */
+    .contenido .imgBox{
+        width: 250px;
+        height: 250px;
+        border: 10px solid #e9161694;
+        outline:15px solid #ffffffde;
+    }
+    .contenido .tituloBox{
+        max-width: 600px;
+    }
+    body:hover .tituloBox{
+        max-width: 800px;
+    }
+    body:hover .tituloBox h2{
+        font-size: 3rem;
+    }
+    body:hover .tituloBox p{
+        font-size: 1.5rem;
+    }
+    /*  */
+    .copyright{
+        position: absolute;
+        bottom: 0;
+        left: 20px;
+        margin-bottom: 0px;
+        padding: 0 30px 25px;
+    }
+    .copyright p{
+        margin-left: 350px;
+    }
+    .redSociales li a{
+        font-size: 1.5rem;
+    }
+}
+@media (min-width:1200px) and (max-width:1330px){
+
+    .contenido .tituloBox h2{
+        font-size: 2rem;
+    }
+    .contenido .tituloBox p{
+        font-size: 1rem;
+    }
+    /*  */
+    .contenido .imgBox{
+        width: 200px;
+        height: 200px;
+        border: 10px solid #e9161694;
+        outline:15px solid #ffffffde;
+    }
+    .contenido .tituloBox{
+        max-width: 500px;
+    }
+    body:hover .tituloBox{
+        max-width: 700px;
+    }
+    body:hover .tituloBox h2{
+        font-size: 2rem;
+    }
+    body:hover .tituloBox p{
+        font-size: 1rem;
+    }
+    /*  */
+    .copyright{
+        position: absolute;
+        bottom: 0;
+        left: 20px;
+        margin-bottom: 0px;
+        padding: 0 30px 30px;
+    }
+    .copyright p{
+        margin-left: 250px;
+    }
+    .redSociales li a{
+        font-size: 1.5rem;
+    }
+}
+@media (min-width:480px) and (max-width:1020px){
+    .contenido {
+        display: grid;
+        justify-content: center;
+    }
+    .contenido .tituloBox h2{
+        font-size: 2rem;
+    }
+    .contenido .tituloBox p{
+        font-size: 1rem;
+    }
+    .contenido .tituloBox a:hover{
+        font-size: 10px;
+        letter-spacing: 1px;
+    }
+    
+    .contenido .tituloBox a{
+        font-size: 10px;
+        letter-spacing: 1px;
+        padding: 5px 10px;
+    }
+    .contenido .imgBox{
+        padding-right: 25px;
+    }
+    .contenido .imgBox img{
+        height: 60vh;
+    }
+    .copyright{
+        position: absolute;
+        bottom: 0;
+        left: 20px;
+        margin-bottom: 0px;
+        padding: 0 30px 30px;
+    }
+    .copyright p{
+        font-size: 10px;
+    }
+    .redSociales li a{
+        font-size: 1.5rem;
+    }
+
+}
+@media (min-width:480px) and (max-width:740px){
+    section{
+        display: grid;
+        padding-bottom: 50px;
+    }
+    .contenido {
+        display: grid;
+        justify-content: center;
+    }
+    .contenido .tituloBox h2{
+        font-size: 2rem;
+    }
+    .contenido .tituloBox p{
+        font-size: 1rem;
+    }
+    .contenido .tituloBox a:hover{
+        font-size: 10px;
+        letter-spacing: 1px;
+    }
+    
+    .contenido .tituloBox a{
+        font-size: 10px;
+        letter-spacing: 1px;
+        padding: 5px 10px;
+    }
+    .contenido .imgBox{
+        padding-right: 25px;
+    }
+    .contenido .imgBox img{
+        height: 60vh;
+    }
+    footer{
+        display: grid;
+    }
+    .copyright{
+        position: inherit;
+        bottom: 0;
+        left: 20px;
+        margin-bottom: 0px;
+        padding: 30px;
+    }
+    .copyright p{
+        font-size: 10px;
+        margin: 0;
+    }
+    .redSociales{
+        position: inherit;
+        display: flex;
+        justify-content: center;
+        padding: 0;
+    }
+    .redSociales li a{
+        font-size: 1.5rem;
+    }
+    .circulo{
+        display: none;
+    }
 }
