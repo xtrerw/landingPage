@@ -368,26 +368,32 @@ body:hover .tituloBox p{
     header .navbarMenu{
         position: relative;
         display: inline-block;
-        border: 2px solid white;
         z-index: 1;
     }
-    header .navbarMenu span{
-        display: block;
+    header .navbarMenu span,a{
+        display: inherit;
+        font-size: 30px;
         color: white;
+        text-decoration: none;
+        transition: all 1s;
     }
     header .navbarMenu .navbar{
         display: none;
         position: absolute;
+    }
+    header .navbarMenu:hover span{
+        background: #c33763;
     }
     header .navbarMenu:hover .navbar{
         display: block;
     }
     header .navbarMenu:hover .navbar li{
         margin-left: 0;
-        margin-top: 5px;
+        margin-bottom: 10px;
     }
     header .navbarMenu:hover .navbar li a{
-        
+        padding: 0;
+        font-size: 1rem;
     }
     /*  */
     .contenido .tituloBox h2{
@@ -473,20 +479,29 @@ body:hover .tituloBox p{
         display: inline-block;
         z-index: 1;
     }
-    header .navbarMenu span {
+    header .navbarMenu span,a {
         text-decoration: none;
         display: inherit;
         color: white;
+        font-size: 30px;
+        transition: all 1s;
     }
     header .navbarMenu .navbar{
         display: none;
         position: absolute;
     }
+    header .navbarMenu:hover span{
+        background: #c33763;
+    }
     header .navbarMenu:hover .navbar{
         display: block;
     }
     header .navbarMenu:hover .navbar li{
-        margin: 0;
+        margin-left: 0;
+        margin-bottom: 10px;
+    }
+    header .navbarMenu:hover .navbar li a{
+        padding: 0;
     }
     /*  */
     .contenido{
