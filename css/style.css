@@ -184,7 +184,15 @@ header .navbar li a:hover{
 }
 /* reponsive */
 @media (max-width:2100) {
+    .contenido .imgBox{
+        width: 600px;
+        display: flex;
+        justify-content: flex-end;
+        padding-right: 50px;
+        margin-top: -50px;
+        z-index: -5;
+    }
     .contenido .imgBox img{
-        height: 40vh;
+        height: 70vh;
     }
 }
