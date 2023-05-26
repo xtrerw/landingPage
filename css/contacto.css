@@ -116,7 +116,15 @@ header .navbar li a:hover{
     margin-bottom: 0.2rem;
     font-size: 15px;
 }
-
+.contenido form .enviar{
+    width: 150px;
+    height: 30px;
+    border: 2px solid black;
+    border-radius: 0.5rem;
+    margin-top: 1rem;
+    background: black;
+    color: white;
+}
 /* estructura de div */
 .contenido form .formContenido{
     display: grid;
@@ -126,7 +134,7 @@ header .navbar li a:hover{
     display: flex;
     justify-content: space-between;
 }
-.contenido form .formContenido .formContenido1 .id{
+.contenido form .formContenido .formContenido1 fieldset{
     display: grid;
 }
 /* animacion de form */
@@ -137,6 +145,7 @@ header .navbar li a:hover{
     border-radius: 0.5rem;
     background: burlywood;
     height: 150px;
+    transition: 0.5s;
 }
 /*  */
 .contenido form:hover .formContenido fieldset{
@@ -146,7 +155,13 @@ header .navbar li a:hover{
 .contenido form:hover fieldset div input{
     border-bottom:2px solid rgb(245, 244, 244);
 }
-
+/*  */
+.contenido form .enviar:hover{
+    background: rgb(194, 77, 45);
+    color: black;
+    box-shadow: 0 0 2rem red;
+    border: 0;
+}
 /*  */
 .contenido form fieldset div .direccion{
     margin: 0;
