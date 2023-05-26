@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@1,600&family=Open+Sans:ital,wght@1,600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Flow+Circular&family=Lora:wght@600&family=Open+Sans:ital,wght@1,600&family=Roboto&display=swap');
 *{
     margin: 0;
     padding: 0;
@@ -323,14 +323,13 @@ header .navbar li a:hover{
     }
     /* responsive menu */
     header .navbarMenu{
-        
         position: relative;
         display: inline-block;
         z-index: 1;
     }
     header .navbarMenu span,a{
         width: 100px;
-        display: inherit;
+        display: inline-block;
         font-size: 30px;
         color: white;
         text-decoration: none;
@@ -366,7 +365,7 @@ header .navbar li a:hover{
         color: white;
         border-bottom: 1px solid rgba(0, 0, 0, 0.712);
     }
-    /*  */
+    /* responsive de contenido */
     .contenido {
         display: grid;
         justify-content: center;
@@ -397,7 +396,7 @@ header .navbar li a:hover{
         margin-top: 30px;
         height: 40vh;
     }
-    /*  */
+    /* responsive de footer */
     footer{
         display: grid;
     }
