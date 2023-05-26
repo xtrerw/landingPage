@@ -85,9 +85,10 @@ header .navbar li a:hover{
     height: 200px;
     transform-style: preserve-3d;
     /* configura la animación infinita */
-    animation: rotate 10s linear infinite;
+    animation: rotate 30s linear infinite;
 }
 @keyframes rotate{
+    /* configurar distancia dentro el centro de rotación y la pantalla, configurar la velocidad del ángulo de rotación cada 30s */
     0%{
         transform: perspective(1000px)rotateY(0deg);
     }
@@ -96,25 +97,40 @@ header .navbar li a:hover{
     }
 }
 .slider div{
-    border: 5px solid black;
+    /* configurar el estilo de cada caja  */
+    border-top: 5px solid #efc804;
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
+    /* colocar el centro de la rotación en posición central */
     transform-origin: center;
     transform-style: preserve-3d;
+    /* configurar el ángulo de la rotación para que no se deja superponer las cartas */
     transform: rotateY(calc(var(--i)*50deg)) translateZ(400px);
 }
 .slider div p{
+    /* configurar el estilo del titulo de cada carta */
     background: #c33763;
-    transform: rotate3d(1,1,1,30deg);
+    box-shadow: 0 0 20px red;
+    transform: rotate3d(1,1,1,50deg);
 }
 .slider div img{
-    background: rgba(0, 0, 0, 0.538);
+    /* configurar el estilo de cada carta para que se ve como un obra del arte */
+    background: #efc80496;
     width: 100%;
-    height: 100%;
+    height: 80%;
+    /* girar las cartas hacia adentro 30 deg */
     transform: rotate3d(1,1,1,30deg);
+    transition: all 1s;
+    /* lo importante que las cartas se deja tener las luces propios */
+    box-shadow: 0 0 20px #efc804;
+}
+.slider img:hover{
+    /* devolver la carta en la posición original y cambiar el color del luz cuando tocar la imagen */
+    transform: rotate3d(1,1,1,0);
+    box-shadow: 0 0 20px #04efe7;
 }
 /*  */
 
