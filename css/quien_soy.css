@@ -187,7 +187,7 @@ body:hover .tituloBox p{
     transition: 0.3s;
 }
 .redSociales li:hover a{
-    color: rgb(45, 3, 74);
+    color: #c33763;
 }
 /* ********************************** */
 /* circulo */
@@ -366,11 +366,13 @@ body:hover .tituloBox p{
     }
     /* responsive menú */
     header .navbarMenu{
+        
         position: relative;
         display: inline-block;
         z-index: 1;
     }
     header .navbarMenu span,a{
+        width: 100px;
         display: inherit;
         font-size: 30px;
         color: white;
@@ -378,8 +380,13 @@ body:hover .tituloBox p{
         transition: all 1s;
     }
     header .navbarMenu .navbar{
+        width: 100px;
         display: none;
         position: absolute;
+        background: rgba(255, 255, 255, 0.79);
+    }
+    header .navbarMenu .navbar a{
+        color: #c33763;
     }
     header .navbarMenu:hover span{
         background: #c33763;
@@ -390,10 +397,17 @@ body:hover .tituloBox p{
     header .navbarMenu:hover .navbar li{
         margin-left: 0;
         margin-bottom: 10px;
+        
     }
     header .navbarMenu:hover .navbar li a{
         padding: 0;
         font-size: 1rem;
+        
+    }
+    header .navbar li a:hover{
+        background: #c33763;
+        color: white;
+        border-bottom: 1px solid rgba(0, 0, 0, 0.712);
     }
     /*  */
     .contenido .tituloBox h2{
@@ -475,20 +489,27 @@ body:hover .tituloBox p{
     }
     /* responsive menú */
     header .navbarMenu{
+        
         position: relative;
         display: inline-block;
         z-index: 1;
     }
-    header .navbarMenu span,a {
-        text-decoration: none;
+    header .navbarMenu span,a{
+        width: 100px;
         display: inherit;
-        color: white;
         font-size: 30px;
+        color: white;
+        text-decoration: none;
         transition: all 1s;
     }
     header .navbarMenu .navbar{
+        width: 100px;
         display: none;
         position: absolute;
+        background: rgba(255, 255, 255, 0.79);
+    }
+    header .navbarMenu .navbar a{
+        color: #c33763;
     }
     header .navbarMenu:hover span{
         background: #c33763;
@@ -499,9 +520,17 @@ body:hover .tituloBox p{
     header .navbarMenu:hover .navbar li{
         margin-left: 0;
         margin-bottom: 10px;
+        
     }
     header .navbarMenu:hover .navbar li a{
         padding: 0;
+        font-size: 1rem;
+        
+    }
+    header .navbar li a:hover{
+        background: #c33763;
+        color: white;
+        border-bottom: 1px solid rgba(0, 0, 0, 0.712);
     }
     /*  */
     .contenido{
