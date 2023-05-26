@@ -128,7 +128,7 @@ header .navbar li a:hover{
     box-shadow: 0 0 20px #efc804;
 }
 .slider img:hover{
-    /* devolver la carta en la posición original y cambiar el color del luz cuando tocar la imagen */
+    /* devolver la carta en la posición sin girar y cambiar el color del luz cuando tocar la imagen */
     transform: rotate3d(1,1,1,0);
     box-shadow: 0 0 20px #04efe7;
 }
