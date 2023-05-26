@@ -78,138 +78,37 @@ header .navbar li a:hover{
     align-items: center;
     padding-left: 30px;
 }
-/* formulario */
-.contenido form{
-    /* configurar el estilo del formulario y el tiempo de transformar */
-    border-radius: 1rem;
-    box-shadow: 0 0 2rem rgb(239, 176, 176);
-    width: 600px;
-    height: auto;
-    background: rgba(255, 255, 255, 0.854);
-    text-align: center;
-    transition: all 2s;
+/* galería de proyecto */
+.slider{
+    position: relative;
+    width: 200px;
+    height: 200px;
+    transform-style: preserve-3d;
+    /* configura la animación infinita */
+    animation: rotate 10s linear infinite;
 }
-.contenido form:hover{
-    /* cambia el estilo del formulario cuando el cursor se entra en la zona del formulario */
-    color: white;
-    background: linear-gradient(217deg, rgba(255, 0, 0, 0.726), rgba(255,0,0,0) 30.71%),linear-gradient(127deg, rgba(34, 181, 214, 0.8), rgba(125, 20, 230, 0.979) 70.71%),linear-gradient(336deg, rgba(255, 255, 0, 0.79), orange 70.71%);
+@keyframes rotate{
+    0%{
+        transform: perspective(1000px)rotateY(0deg);
+    }
+    100%{
+        transform: perspective(1000px)rotateY(360deg);
+    }
 }
-.contenido form .formContenido{
-    /* configurar fieldset de la clase formContenido */
-    border: 0px;
-    margin-bottom: 1rem;
-    padding: 40px;
-}
-.contenido form legend{
-    /* configurar el estilo del título del formulario */
-    font-size: 30px;
-    text-transform: uppercase;
-}
-.contenido form .formContenido fieldset legend{
-    /* configurar el estilo de cada título de cada contenido, por ejemplo IDENTIFICACIÓN, CONTACTO, COMENTARIOS */
-    font-size: 20px;
-    text-transform: uppercase;
-}
-.contenido form .formContenido .formContenido1 .id,.contacto{
-    /* configurar los tamaños de las dos cajas de la clase de id y la de contacto,y configurar padding de ellas para que los contenidos se ven más cómodo. */
-    width: 47%;
-    padding: 0.5rem;
-}
-.contenido form .formContenido .formContenido2{
-    /* configurar el tamaño de la de los comentarios */
+.slider div{
+    border: 5px solid black;
+    position: absolute;
+    top: 0;
+    left: 0;
     width: 100%;
+    height: 100%;
+    transform-origin: center;
+    transform-style: preserve-3d;
+    transform: rotateY(calc(var(--i)*72deg)) translateZ(400px);
 }
-.contenido form .formContenido label{
-    /* configurar los estilos de todas etiquetas de que introduce la información, y todas etiquetas se desplaza hacia al lado más izquierda */
-    text-transform: uppercase;
-    margin-bottom: 0.2rem;
-    font-size: 15px;
-    text-align: left;
-}
-.contenido form fieldset div input{
-    /* configurar la zona introducida, y justo queda el borde inferior */
-    width: 50%;
-    height: 1.3rem;
-    background: #ffffff00;
-    border: 0;
-    border-bottom:2px solid black;
-    transition: 2s;
-}
-.contenido form fieldset .formContenido2 textarea{
-    /* configurar la zona de que introduce los comentarios */
-    width: 95%;
-    height: 90%;
-    border-radius: 0.5rem;
-    padding: 0.5rem;
-    font-size: 1rem;
-}
-.contenido form .enviar{
-    /* configurar el botón de enviar y el tiempo de trnsformar  */
-    width: 150px;
-    height: 40px;
-    border: 0;
-    border-radius: 0.5rem;
-    margin-top: 1rem;
-    background: black;
-    color: white;
-    font-size: 15px;
-    transition: all 1s;
-}
-/* estructura de div con display flex y grid */
-.contenido form .formContenido{
-    /* centrar los dos cajas de la clase de formContenido1 y la de formContenido2 dentro del formulario */
-    display: grid;
-    justify-content: center;
-}
-.contenido form .formContenido .formContenido1{
-    /* hay un espacio entre de la parte de identificación y la de contacto */
-    display: flex;
-    justify-content: space-between;
-}
-.contenido form .formContenido .formContenido1 fieldset{
-    /* colocar todos los elementos de la parte identificación y la de contacto en posición vertical */
-    display: grid;
-}
-/* animación de form */
-/* configurar el estilo de los elementos anterior */
-.contenido form .formContenido fieldset{
-    border: 2px solid rgb(0, 0, 0);
-    margin-bottom: 0.5rem;
-    border-radius: 0.5rem;
-    background: burlywood;
-    height: 150px;
-    transition: 0.5s;
-}
-/* se va a cambiar el color del fondo y añadir una sombra cuando tocar el formulario */
-.contenido form:hover .formContenido fieldset{
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.772);
-    background: rgba(65, 63, 63, 0.795);
-}
-/* se va a cambiar el color de la zona introducido cuando tocar el formulario */
-.contenido form:hover fieldset div input{
-    border-bottom:2px solid rgb(245, 244, 244);
-    color: white;
-}
-/* se va a cambiar el color de la zona introducido cuando introduce la información */
-.contenido form fieldset div input:focus{
-    color: white;
-}
-.contenido form:hover .enviar{
-    border: 0;
-    background: rgba(255, 255, 255, 0.74);
-    box-shadow: 5px 5px 5px black;
-    color: black;
-}
-/*  */
-.contenido form div .enviar:hover{
-    border: 0;
-    background: orange;
-    box-shadow: 5px 5px 5px #A83279;
-}
-.contenido form div .enviar:focus{
-    border: 0;
-    background: white;
-    box-shadow: 5px 5px 5px black;
+.slider div p{
+    background: #c33763;
+    transform: rotate3d(1,1,1,30deg);
 }
 /*  */
 
