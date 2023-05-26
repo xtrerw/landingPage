@@ -259,7 +259,8 @@ header .navbar li a:hover{
     top: 0;
     left: 0;
     /* configurar el fondo de la parte del circulo */
-    background-image: url(../img/figura_circulo.jpg);
+    background-image: url(../img/figura_circulo2.jpg);
+    background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-position: right;

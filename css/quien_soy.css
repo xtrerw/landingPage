@@ -195,7 +195,8 @@ body:hover .tituloBox p{
     position: absolute;
     top: 0;
     left: 0;
-    background-image: url(../img/quien_soy.png);
+    background-image: url(../img/quien_soy.jpg);
+    background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
     clip-path: circle(650px at right 800px);
