@@ -291,7 +291,7 @@ header .navbar li a:hover{
         display: none;
     }
 }
-@media (max-width:850px){
+@media (min-width:670px) and (max-width:850px){
     /* responsive de currículum */
     .cv{
         width: 300px;
@@ -314,6 +314,206 @@ header .navbar li a:hover{
         font-size: 20px;
     }
     /* cuando la anchura de la página se reduce por debajo de 850px, el menú desplegable aparecerá */
+    header .navbarMenu{
+        position: relative;
+        display: inline-block;
+        z-index: 1;
+    }
+    header .navbarMenu span,a{
+        width: 100px;
+        display: inherit;
+        font-size: 20px;
+        color: white;
+        text-decoration: none;
+        transition: all 1s;
+    }
+    header .navbarMenu .navbar{
+        width: 100px;
+        display: none;
+        position: absolute;
+        background: rgba(255, 255, 255, 0.79);
+    }
+    header .navbarMenu .navbar a{
+        color: #c33763;
+    }
+    header .navbarMenu:hover span{
+        background: #c33763;
+    }
+    /* cuando toca el menú, aparecerá sus opciones que son proyecto, quien_soy,cv y contacto etc */
+    header .navbarMenu:hover .navbar{
+        display: block;
+    }
+    header .navbarMenu:hover .navbar li{
+        margin-left: 0;
+        margin-bottom: 10px;
+    }
+    header .navbarMenu:hover .navbar li a{
+        padding: 0;
+        font-size: 1rem;
+    }
+    /* cuando elige cada una opción de menú, ello se convertirá un pequeño cuadrado elevado */
+    header .navbar li a:hover{
+        background: #c33763;
+        color: white;
+        border-bottom: 1px solid rgba(0, 0, 0, 0.712);
+    }
+    /*  */
+    .contenido {
+        display: grid;
+        justify-content: center;
+        padding: 0;
+    }
+    /* reponsive de footer */
+    footer{
+        display: grid;
+    }
+    .copyright{
+        position: inherit;
+        bottom: 0;
+        left: 20px;
+        margin-bottom: 0px;
+        padding: 30px;
+    }
+    .copyright p{
+        font-size: 10px;
+        margin: 0;
+    }
+    .redSociales{
+        position: inherit;
+        display: flex;
+        justify-content: center;
+        padding: 0;
+    }
+    .redSociales li a{
+        font-size: 1.5rem;
+    }
+    .circulo{
+        display: none;
+    }
+}
+@media (min-width:480px) and (max-width:670px){
+    /* responsive de currículum */
+    .cv{
+        width: 200px;
+        height: 300px;
+    }
+    .portada div:first-child{
+        font-size: 1.5rem;
+    }
+    /*  */
+    section{
+        display: grid;
+        padding-top: 30vh;
+        padding-bottom: 50px;
+    }
+    header{
+        padding: 20px;
+    }
+    /* responsive menú */
+    header .logo{
+        font-size: 20px;
+    }
+    /* cuando la anchura de la página se reduce por debajo de 670px, el menú desplegable aparecerá */
+    header .navbarMenu{
+        position: relative;
+        display: inline-block;
+        z-index: 1;
+    }
+    header .navbarMenu span,a{
+        width: 100px;
+        display: inherit;
+        font-size: 20px;
+        color: white;
+        text-decoration: none;
+        transition: all 1s;
+    }
+    header .navbarMenu .navbar{
+        width: 100px;
+        display: none;
+        position: absolute;
+        background: rgba(255, 255, 255, 0.79);
+    }
+    header .navbarMenu .navbar a{
+        color: #c33763;
+    }
+    header .navbarMenu:hover span{
+        background: #c33763;
+    }
+    /* cuando toca el menú, aparecerá sus opciones que son proyecto, quien_soy,cv y contacto etc */
+    header .navbarMenu:hover .navbar{
+        display: block;
+    }
+    header .navbarMenu:hover .navbar li{
+        margin-left: 0;
+        margin-bottom: 10px;
+    }
+    header .navbarMenu:hover .navbar li a{
+        padding: 0;
+        font-size: 1rem;
+    }
+    /* cuando elige cada una opción de menú, ello se convertirá un pequeño cuadrado elevado */
+    header .navbar li a:hover{
+        background: #c33763;
+        color: white;
+        border-bottom: 1px solid rgba(0, 0, 0, 0.712);
+    }
+    /*  */
+    .contenido {
+        display: grid;
+        justify-content: center;
+        padding: 0;
+    }
+    /* reponsive de footer */
+    footer{
+        display: grid;
+    }
+    .copyright{
+        position: inherit;
+        bottom: 0;
+        left: 20px;
+        margin-bottom: 0px;
+        padding: 30px;
+    }
+    .copyright p{
+        font-size: 10px;
+        margin: 0;
+    }
+    .redSociales{
+        position: inherit;
+        display: flex;
+        justify-content: center;
+        padding: 0;
+    }
+    .redSociales li a{
+        font-size: 1.5rem;
+    }
+    .circulo{
+        display: none;
+    }
+}
+@media (min-width:0px) and (max-width:480px){
+    /* responsive de currículum */
+    .cv{
+        width: 200px;
+        height: 300px;
+    }
+    .portada div:first-child{
+        font-size: 1.5rem;
+    }
+    /*  */
+    section{
+        display: grid;
+        padding-top: 30vh;
+        padding-bottom: 50px;
+    }
+    header{
+        padding: 20px;
+    }
+    /* responsive menú */
+    header .logo{
+        font-size: 20px;
+    }
+    /* cuando la anchura de la página se reduce por debajo de 480px, el menú desplegable aparecerá */
     header .navbarMenu{
         position: relative;
         display: inline-block;
