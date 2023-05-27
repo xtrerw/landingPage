@@ -364,10 +364,17 @@ body:hover .tituloBox p{
     /*  */
     section{
         display: grid;
+        padding-top: 30vh;
+        padding-bottom: 50px;
+    }
+    header{
+        padding: 20px;
     }
     /* responsive menú */
+    header .logo{
+        font-size: 20px;
+    }
     header .navbarMenu{
-        
         position: relative;
         display: inline-block;
         z-index: 1;
@@ -375,7 +382,7 @@ body:hover .tituloBox p{
     header .navbarMenu span,a{
         width: 100px;
         display: inherit;
-        font-size: 30px;
+        font-size: 20px;
         color: white;
         text-decoration: none;
         transition: all 1s;
@@ -486,9 +493,16 @@ body:hover .tituloBox p{
     /*  */
     section{
         display: grid;
-        padding-bottom: 20px;
+        padding-top: 30vh;
+        padding-bottom: 50px;
+    }
+    header{
+        padding: 20px;
     }
     /* responsive menú */
+    header .logo{
+        font-size: 20px;
+    }
     header .navbarMenu{
         
         position: relative;
@@ -498,7 +512,7 @@ body:hover .tituloBox p{
     header .navbarMenu span,a{
         width: 100px;
         display: inherit;
-        font-size: 30px;
+        font-size: 20px;
         color: white;
         text-decoration: none;
         transition: all 1s;

@@ -276,7 +276,6 @@ header .navbar li a:hover{
 
 }
 @media (min-width:1330px) and (max-width:1500px) {
-
     .copyright{
         position: absolute;
         bottom: 0;
@@ -331,14 +330,38 @@ header .navbar li a:hover{
     }
 }
 @media (max-width:850px){
+    /* responsive de formulario */
+    .contenido form{
+        width: 400px;
+    }
+    .contenido form legend{
+        font-size: 20px;
+    }
+    .contenido form .formContenido fieldset legend{
+        font-size: 15px;
+    }
+    .contenido form .formContenido label{
+        font-size: 10px;
+    }
+    .contenido form fieldset div input{
+        font-size: 10px;
+    }
+    .contenido form fieldset .formContenido2 textarea{
+        font-size: 10px;
+    }
+    /*  */
     section{
         display: grid;
+        padding-top: 30vh;
         padding-bottom: 50px;
     }
     header{
-        padding: 20px 50px;
+        padding: 20px;
     }
     /* responsive menu */
+    header .logo{
+        font-size: 20px;
+    }
     header .navbarMenu{
         
         position: relative;
@@ -348,7 +371,7 @@ header .navbar li a:hover{
     header .navbarMenu span,a{
         width: 100px;
         display: inherit;
-        font-size: 30px;
+        font-size: 20px;
         color: white;
         text-decoration: none;
         transition: all 1s;

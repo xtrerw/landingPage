@@ -81,8 +81,8 @@ header .navbar li a:hover{
 /* galería de proyecto */
 .slider{
     position: relative;
-    width: 200px;
-    height: 200px;
+    width: 10vw;
+    height: 22vh;
     transform-style: preserve-3d;
     /* configura la animación infinita */
     animation: rotate 30s linear infinite;
@@ -108,7 +108,7 @@ header .navbar li a:hover{
     transform-origin: center;
     transform-style: preserve-3d;
     /* configurar el ángulo de la rotación para que no se deja superponer las cartas */
-    transform: rotateY(calc(var(--i)*50deg)) translateZ(400px);
+    transform: rotateY(calc(var(--i)*50deg)) translateZ(25vw);
 }
 .slider div p{
     /* configurar el estilo del titulo de cada carta */
@@ -213,7 +213,7 @@ header .navbar li a:hover{
         font-size: 1.5rem;
     }
 }
-@media (min-width:1020px) and (max-width:1330px){
+@media (min-width:1020px) and (max-width:1330px){ 
     .copyright{
         position: absolute;
         bottom: 0;
@@ -253,16 +253,24 @@ header .navbar li a:hover{
     }
 }
 @media (max-width:850px){
+    /* responsive de animación */
+    .slider div p{
+        font-size: 65%;
+    }
+    /*  */
     section{
         display: grid;
+        padding-top: 30vh;
         padding-bottom: 50px;
     }
     header{
-        padding: 20px 50px;
+        padding: 20px;
     }
     /* responsive menu */
+    header .logo{
+        font-size: 20px;
+    }
     header .navbarMenu{
-        
         position: relative;
         display: inline-block;
         z-index: 1;
@@ -270,7 +278,7 @@ header .navbar li a:hover{
     header .navbarMenu span,a{
         width: 100px;
         display: inherit;
-        font-size: 30px;
+        font-size: 20px;
         color: white;
         text-decoration: none;
         transition: all 1s;
