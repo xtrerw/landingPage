@@ -310,8 +310,6 @@ header .navbar li a:hover{
         display: grid;
         justify-content: center;
     }
-    /* formulario */
-    /*  */
     .copyright{
         position: absolute;
         bottom: 0;
@@ -362,8 +360,8 @@ header .navbar li a:hover{
     header .logo{
         font-size: 20px;
     }
+    /* cuando la anchura de la página se reduce por debajo de 850px, el menú desplegable aparecerá */
     header .navbarMenu{
-        
         position: relative;
         display: inline-block;
         z-index: 1;
@@ -388,19 +386,19 @@ header .navbar li a:hover{
     header .navbarMenu:hover span{
         background: #c33763;
     }
+    /* cuando toca el menú, aparecerá sus opciones que son proyecto, quien_soy,cv y contacto etc */
     header .navbarMenu:hover .navbar{
         display: block;
     }
     header .navbarMenu:hover .navbar li{
         margin-left: 0;
         margin-bottom: 10px;
-        
     }
     header .navbarMenu:hover .navbar li a{
         padding: 0;
         font-size: 1rem;
-        
     }
+    /* cuando elige cada una opción de menú, ello se convertirá en un pequeño cuadrado elevado */
     header .navbar li a:hover{
         background: #c33763;
         color: white;

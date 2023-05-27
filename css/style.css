@@ -57,7 +57,7 @@ header .logo{
     font-family: 'Lora', serif;
     font-weight: 600;
 }
-/* para responsive menu */
+/* para responsive menú, al primero se deja desaparecer el menú desplegable */
 header .navbarMenu span{
     display: none;
 }
@@ -339,6 +339,7 @@ header .navbar li a:hover{
     header .logo{
         font-size: 20px;
     }
+    /* cuando la anchura de la página se reduce por debajo de 850px, el menú desplegable aparecerá */
     header .navbarMenu{
         position: relative;
         display: inline-block;
@@ -346,7 +347,7 @@ header .navbar li a:hover{
     }
     header .navbarMenu span,a{
         width: 100px;
-        display: inline-block;
+        display: inherit;
         font-size: 20px;
         color: white;
         text-decoration: none;
@@ -364,19 +365,19 @@ header .navbar li a:hover{
     header .navbarMenu:hover span{
         background: #c33763;
     }
+    /* cuando toca el menú, aparecerá sus opciones que son proyecto, quien_soy,cv y contacto etc */
     header .navbarMenu:hover .navbar{
         display: block;
     }
     header .navbarMenu:hover .navbar li{
         margin-left: 0;
         margin-bottom: 10px;
-        
     }
     header .navbarMenu:hover .navbar li a{
         padding: 0;
         font-size: 1rem;
-        
     }
+    /* cuando elige cada una opción de menú, ello se convertirá en un pequeño cuadrado elevado */
     header .navbar li a:hover{
         background: #c33763;
         color: white;
