@@ -351,7 +351,7 @@ header .navbar li a:hover{
         padding: 0;
         font-size: 1rem;
     }
-    /* cuando elige cada una opción, ello se convertirá un pequeño cuadrado elevado */
+    /* cuando elige cada una opción de menú, ello se convertirá un pequeño cuadrado elevado */
     header .navbar li a:hover{
         background: #c33763;
         color: white;
