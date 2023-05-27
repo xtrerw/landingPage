@@ -500,6 +500,19 @@ header .navbar li a:hover{
     .portada div:first-child{
         font-size: 1.5rem;
     }
+    /* hago una animación de la portada del currículum como subir una persiana */
+    .cv .portada{
+        /* colocar el punto original en la posición arríba del currículum */
+        transform-origin: top;
+    }
+    /* cuando lo toca, mantenerá sin mover */
+    .cv:hover{
+        transform: translateX(0);
+    }
+    /* contraiga la portada del currículum a lo largo de eje Y hasta que desparece completamente */
+    .cv:hover .portada{
+        transform: scaleY(0);
+    }
     /*  */
     section{
         display: grid;
