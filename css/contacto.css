@@ -85,7 +85,7 @@ header .navbar li a:hover{
     box-shadow: 0 0 2rem rgb(239, 176, 176);
     width: 600px;
     height: auto;
-    background: rgba(255, 255, 255, 0.854);
+    background: rgba(255, 255, 255, 0.815);
     text-align: center;
     transition: all 2s;
 }
