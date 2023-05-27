@@ -93,20 +93,22 @@ header .navbar li a:hover{
 .cv:hover{
     transform: translateX(50%);
 }
-/* configurar el estilo del currículum vitae */
+/* configurar el estilo la portada del currículum vitae */
 .cv .portada{
     position: relative;
     width: 100%;
     height: 100%;
     display: block;
-    /*  */
+    /* se deja cubrir la portada al contenido  */
     z-index: 10;
     transform-style: preserve-3d;
+    /* colocar el punto original en la posición izuquierda */
     transform-origin: left;
+    /* tarda 1s a transformar */
     transition: all 1s;
     box-shadow: 0 0 20px #c33763;
 }
-/*  */
+/* la portada se rota 180 grados frente a la pantalla alrededor del eje y */
 .cv:hover .portada{
     transform: rotateY(-180deg);
 }
@@ -117,9 +119,11 @@ header .navbar li a:hover{
     top: 0;
     left: 0;
     transform-style: preserve-3d;
+     /* oculta el reverso de cada página */
     backface-visibility: hidden;
 }
 .portada div:first-child{
+    /* configurar el estilo de la portada */
     font-family: 'Anton', sans-serif;
     display: flex;
     align-items: center;
@@ -130,6 +134,7 @@ header .navbar li a:hover{
     color: rgba(0, 0, 0, 0.823);
 }
 .portada div:nth-child(2){
+    /* configurar el estilo de la página primera */
     background: rgba(245, 245, 245, 0.737);
     background-image: url(../img/CV0.png);
     background-repeat: no-repeat;
@@ -138,6 +143,7 @@ header .navbar li a:hover{
     transform: rotateY(-180deg);
 }
 .cv .contenidoCV{
+    /* pone la figura del currículum */
     position: absolute;
     top: 0;
     left: 0;
@@ -148,7 +154,7 @@ header .navbar li a:hover{
     background-size: cover;
     background-attachment: fixed;
 }
-/*  */
+/* aparece una sombra rojo cuando toca el currículum. */
 .cv:hover .contenidoCV{
     box-shadow: 0 0 20px rgb(233, 14, 79);
 }
@@ -231,6 +237,15 @@ header .navbar li a:hover{
     }
 }
 @media (min-width:1020px) and (max-width:1330px){
+    /* responsive de currículum */
+    .cv{
+        width: 400px;
+        height: 500px;
+    }
+    .portada div:first-child{
+        font-size: 2.5rem;
+    }
+    /* responsive footer */
     .copyright{
         position: absolute;
         bottom: 0;
@@ -250,7 +265,14 @@ header .navbar li a:hover{
         display: grid;
         justify-content: center;
     }
-    /* formulario */
+    /* responsive de currículum */
+    .cv{
+        width: 400px;
+        height: 500px;
+    }
+    .portada div:first-child{
+        font-size: 2.5rem;
+    }
     /*  */
     .copyright{
         position: absolute;
@@ -270,9 +292,13 @@ header .navbar li a:hover{
     }
 }
 @media (max-width:850px){
-    /* responsive de animación */
-    .slider div p{
-        font-size: 65%;
+    /* responsive de currículum */
+    .cv{
+        width: 300px;
+        height: 400px;
+    }
+    .portada div:first-child{
+        font-size: 2rem;
     }
     /*  */
     section{
@@ -283,10 +309,11 @@ header .navbar li a:hover{
     header{
         padding: 20px;
     }
-    /* responsive menu */
+    /* responsive menú */
     header .logo{
         font-size: 20px;
     }
+    /* cuando la anchura de la página se reduce por debajo de 850px, el menú desplegable aparecerá */
     header .navbarMenu{
         position: relative;
         display: inline-block;
@@ -312,19 +339,19 @@ header .navbar li a:hover{
     header .navbarMenu:hover span{
         background: #c33763;
     }
+    /* cuando toca el menú, aparecerá sus opciones que son proyecto, quien_soy,cv y contacto etc */
     header .navbarMenu:hover .navbar{
         display: block;
     }
     header .navbarMenu:hover .navbar li{
         margin-left: 0;
         margin-bottom: 10px;
-        
     }
     header .navbarMenu:hover .navbar li a{
         padding: 0;
         font-size: 1rem;
-        
     }
+    /* cuando elige cada una opción, ello se convertirá un pequeño cuadrado elevado */
     header .navbar li a:hover{
         background: #c33763;
         color: white;
@@ -336,7 +363,7 @@ header .navbar li a:hover{
         justify-content: center;
         padding: 0;
     }
-    /*  */
+    /* reponsive de footer */
     footer{
         display: grid;
     }
