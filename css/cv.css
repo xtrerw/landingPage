@@ -151,7 +151,6 @@ header .navbar li a:hover{
     width: 100%;
     height: 100%;
     display: flex;
-    
     padding: 20px;
     font-family: 'Lora', serif;
 }
@@ -161,11 +160,14 @@ header .navbar li a:hover{
 }
 /* parte de contenido de cv */
 /* parte primera */
-/* deja centrar los textos en vertical */
+/* en la parte primera inculyen introducción ,imagen perfil, datos personal, objetivo profesional */
 .p1 {
-    background-image: linear-gradient(127deg,rgb(150, 149, 149),rgb(183, 176, 176)) ;
+    /* hago un fondo de la parte primera */
+    background-image: linear-gradient(127deg,rgb(8, 8, 8),rgb(81, 79, 79)) ;
     border-radius:30px;
     box-shadow: 0 0 5px gray;
+    /* deja el tamaño de los dos partes son lo mismo */
+    flex: 50%;
 }
 /* deja centrar el foto del perfil */
 .p1 picture{
@@ -174,14 +176,24 @@ header .navbar li a:hover{
     align-items: center;
     margin-top: 10%;
 }
+/* configurar el estilo del foto */
 .p1 picture img{
     width: 100px;
     height: 100px;
     border-radius: 50%;
+    box-shadow: 0 0 10px white;
 }
 .p1 div {
     padding: 10% 10% 0 10%;
     margin-bottom: 10%;
+}
+/* configurar el estilo de cada título y cada parráfo de cada parte pequeña en la parte primera */
+.p1 div h3{
+    font-family: fantasy;
+    color: #c33763;
+}
+.p1 div p{
+    color: aliceblue;
 }
 /* centrar la linea horizontal */
 .cv hr{
@@ -195,9 +207,17 @@ header .navbar li a:hover{
     font-size: 10px;
 }
 /* parte 2 */
+/* en la parte primera inculyen titulo de CV(nombre y carrera) ,experiencia laboral, formación académicos, objetivo profesional */
+.p2{
+    flex: 50%;
+}
 .p2 div {
-    padding: 10% 10% 0 10%;
-    margin-bottom: 10%;
+    padding: 5% 0 0 10%;
+    margin-bottom: 5%;
+}
+.p2 div div{
+    padding-top: 2%;
+    margin: 0;
 }
 /* configurar el estilo de título */
 .p2 div:first-child{
@@ -208,13 +228,21 @@ header .navbar li a:hover{
     color: rgb(10, 10, 69);
 }
 .p2 div h2{
-    font-size: 1.5rem;
+    font-size: 1.3rem;
     color: rgb(10, 10, 69);
 }
+/* configurar el estilo de cada título de cada parte pequeña */
 .p2 div h3{
+    font-family: fantasy;
+    color: #c33763;
     font-size: 1rem;
 }
-.p2 div p{
+/* configurar el estilo de los contenido en cada parte pequeña */
+.p2 div div h4{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color:rgb(10, 10, 69);
+}
+.p2 div div p{
     font-size: 10px;
 }
 /*  */
