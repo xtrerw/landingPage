@@ -152,7 +152,6 @@ header .navbar li a:hover{
     height: 100%;
     display: flex;
     padding: 20px;
-    font-family: 'Lora', serif;
 }
 /* aparece una sombra rojo cuando toca el currículum. */
 .cv:hover .contenidoCV{
@@ -170,16 +169,11 @@ header .navbar li a:hover{
     flex: 50%;
 }
 /* deja centrar el foto del perfil */
-.p1 picture{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 10%;
-}
 /* configurar el estilo del foto */
-.p1 picture img{
+.p1 img{
     width: 100px;
     height: 100px;
+    margin: 20px;
     border-radius: 50%;
     box-shadow: 0 0 10px white;
 }
@@ -199,11 +193,11 @@ header .navbar li a:hover{
 .cv hr{
     width: 80%;
     height: 3px;
-    background: rgb(66, 12, 12);
+    background: rgb(135, 25, 25);
     border: none;
     margin-left: 10%;
 }
-.p1 p{
+.p1 div p{
     font-size: 10px;
 }
 /* parte 2 */
@@ -323,7 +317,7 @@ header .navbar li a:hover{
         font-size: 1.5rem;
     }
 }
-@media (min-width:1020px) and (max-width:1370px){
+@media (min-width:910px) and (max-width:1370px){
     /* responsive de currículum */
     .cv{
         width: 400px;
@@ -331,6 +325,35 @@ header .navbar li a:hover{
     }
     .portada div:first-child{
         font-size: 2.5rem;
+    }
+    /* responsive de contenido de CV */
+    .cv .contenidoCV{
+        padding: 10px;
+    }
+    /* responsive la parte primera de contenido de CV */
+    .p1 img{
+        transform: scale(0.95);
+    }
+    .p1 div h3{
+        font-size: 10px;
+    }
+    .p1 div {
+        padding: 2.5% 5% 0 5%;
+        margin-bottom: 2.5%;
+    }
+    /* responsive la parte segunda de contenido de CV */
+    .p2 div h1{
+        font-size: 1.5rem;
+    }
+    .p2 div h2{
+        font-size: 1rem;
+    }
+    .p2 div h3{
+        font-size: 10px;
+    }
+    .p2 div{
+        padding: 2.5% 5% 0 5%;
+        margin-bottom: 2.5%;
     }
     /* responsive footer */
     .copyright{
@@ -347,7 +370,7 @@ header .navbar li a:hover{
         font-size: 1.5rem;
     }
 }
-@media (min-width:850px) and (max-width:1020px){
+@media (min-width:860px) and (max-width:910px){
     .contenido {
         display: grid;
         justify-content: center;
@@ -359,6 +382,32 @@ header .navbar li a:hover{
     }
     .portada div:first-child{
         font-size: 2.5rem;
+    }
+    /* responsive de contenido de CV */
+    .cv .contenidoCV{
+        padding: 10px;
+    }
+    /* responsive la parte primera de contenido de CV */
+    .p1 div h3{
+        font-size: 10px;
+    }
+    .p1 div {
+        padding: 2.5% 5% 0 5%;
+        margin-bottom: 2.5%;
+    }
+    /* responsive la parte segunda de contenido de CV */
+    .p2 div h1{
+        font-size: 1.5rem;
+    }
+    .p2 div h2{
+        font-size: 1rem;
+    }
+    .p2 div h3{
+        font-size: 10px;
+    }
+    .p2 div{
+        padding: 2.5% 5% 0 5%;
+        margin-bottom: 2.5%;
     }
     /*  */
     .copyright{
@@ -378,14 +427,50 @@ header .navbar li a:hover{
         display: none;
     }
 }
-@media (min-width:670px) and (max-width:850px){
+@media (min-width:670px) and (max-width:860px){
     /* responsive de currículum */
     .cv{
-        width: 300px;
-        height: 400px;
+        width: 350px;
+        height: 500px;
     }
     .portada div:first-child{
         font-size: 2rem;
+    }
+    /* responsive contenido de CV */
+    .cv .contenidoCV{
+        padding: 5px;
+    }
+    /* responsive hr de contenido de CV */
+    .contenidoCV hr{
+        height: 2px;
+    }
+    /* responsive la parte primera de contenido de CV */
+    .p1 div {
+        padding: 2px 0 0 2px;
+        margin-bottom: 0;
+    }
+    .p1 div{
+        font-size: 5px;
+    }
+    .p1 div p{
+        font-size: 0.1px;
+    }
+    .p1 div p ion-icon{
+        font-size: 10px;
+    }
+    /* responsive la parte segunda de contenido de CV */
+    .p2 div h1{
+        font-size: 1.5rem;
+    }
+    .p2 div h2{
+        font-size: 1rem;
+    }
+    .p2 div h3{
+        font-size: 10px;
+    }
+    .p2 div{
+        padding: 2.5% 5% 0 5%;
+        margin-bottom: 2.5%;
     }
     /*  */
     section{
@@ -400,7 +485,7 @@ header .navbar li a:hover{
     header .logo{
         font-size: 20px;
     }
-    /* cuando la anchura de la página se reduce por debajo de 850px, el menú desplegable aparecerá */
+    /* cuando la anchura de la página se reduce por debajo de 860px, el menú desplegable aparecerá */
     header .navbarMenu{
         position: relative;
         display: inline-block;
@@ -481,11 +566,56 @@ header .navbar li a:hover{
 @media (min-width:480px) and (max-width:670px){
     /* responsive de currículum */
     .cv{
-        width: 200px;
-        height: 300px;
+        width: 250px;
+        height: 650px;
     }
     .portada div:first-child{
         font-size: 1.5rem;
+    }
+    /* responsive contenido de CV */
+    .cv .contenidoCV{
+        display: grid;
+        padding: 2px;
+    }
+    /* responsive hr de contenido de CV */
+    .contenidoCV hr{
+        height: 2px;
+    }
+    /* responsive la parte primera de contenido de CV */
+    .p1 div {
+        padding: 0 0 0 15px;
+        margin-bottom: 0;
+        font-size: 3px;
+    }
+    .p1 img{
+        width: 30px;
+        height: 30px;
+    }
+    .p1 div p{
+        font-size: 1px;
+    }
+    .p1 div p ion-icon{
+        font-size: 10px;
+    }
+    /* responsive la parte segunda de contenido de CV */
+    .p2 div h1{
+        font-size: 10px;
+    }
+    .p2 div h2{
+        font-size: 5px;
+    }
+    .p2 div h3{
+        font-size: 1px;
+    }
+    .p2 div div h4{
+        font-size: 1px;
+    }
+    .p2 div div p{
+        font-size: 1px;
+    }
+    .p2 div{
+        padding: 0 0 0 15px;
+        margin-bottom: 5px;
     }
     /*  */
     section{
@@ -582,7 +712,7 @@ header .navbar li a:hover{
     /* responsive de currículum */
     .cv{
         width: 200px;
-        height: 300px;
+        height: 700px;
     }
     .portada div:first-child{
         font-size: 1.5rem;
@@ -599,6 +729,50 @@ header .navbar li a:hover{
     /* contraiga la portada del currículum a lo largo de eje Y hasta que desparece completamente */
     .cv:hover .portada{
         transform: scaleY(0);
+    }
+    /* responsive contenido de CV */
+    .cv .contenidoCV{
+        display: grid;
+        padding: 2px;
+    }
+    /* responsive hr de contenido de CV */
+    .contenidoCV hr{
+        height: 2px;
+    }
+    /* responsive la parte primera de contenido de CV */
+    .p1 div {
+        padding: 0 0 0 15px;
+        margin-bottom: 0;
+        font-size: 3px;
+    }
+    .p1 img{
+        display: none;
+    }
+    .p1 div p{
+        font-size: 1px;
+    }
+    .p1 div p ion-icon{
+        font-size: 10px;
+    }
+    /* responsive la parte segunda de contenido de CV */
+    .p2 div h1{
+        font-size: 10px;
+    }
+    .p2 div h2{
+        font-size: 5px;
+    }
+    .p2 div h3{
+        font-size: 1px;
+    }
+    .p2 div div h4{
+        font-size: 1px;
+    }
+    .p2 div div p{
+        font-size: 1px;
+    }
+    .p2 div{
+        padding: 0 0 0 15px;
+        margin-bottom: 5px;
     }
     /*  */
     section{
