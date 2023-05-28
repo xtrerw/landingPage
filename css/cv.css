@@ -150,15 +150,74 @@ header .navbar li a:hover{
     left: 0;
     width: 100%;
     height: 100%;
-    background-image: url(../img/CVcontenido.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
+    display: flex;
+    
+    padding: 20px;
+    font-family: 'Lora', serif;
 }
 /* aparece una sombra rojo cuando toca el currículum. */
 .cv:hover .contenidoCV{
     box-shadow: 0 0 20px rgb(233, 14, 79);
 }
+/* parte de contenido de cv */
+/* parte primera */
+/* deja centrar los textos en vertical */
+.p1 {
+    background-image: linear-gradient(127deg,rgb(150, 149, 149),rgb(183, 176, 176)) ;
+    border-radius:30px;
+    box-shadow: 0 0 5px gray;
+}
+/* deja centrar el foto del perfil */
+.p1 picture{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10%;
+}
+.p1 picture img{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+.p1 div {
+    padding: 10% 10% 0 10%;
+    margin-bottom: 10%;
+}
+/* centrar la linea horizontal */
+.cv hr{
+    width: 80%;
+    height: 3px;
+    background: rgb(66, 12, 12);
+    border: none;
+    margin-left: 10%;
+}
+.p1 p{
+    font-size: 10px;
+}
+/* parte 2 */
+.p2 div {
+    padding: 10% 10% 0 10%;
+    margin-bottom: 10%;
+}
+/* configurar el estilo de título */
+.p2 div:first-child{
+    margin: 0;
+}
+.p2 div h1{
+    font-size: 2.5rem;
+    color: rgb(10, 10, 69);
+}
+.p2 div h2{
+    font-size: 1.5rem;
+    color: rgb(10, 10, 69);
+}
+.p2 div h3{
+    font-size: 1rem;
+}
+.p2 div p{
+    font-size: 10px;
+}
+/*  */
 /* Copyright */
 .copyright{
     position: absolute;
